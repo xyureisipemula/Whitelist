@@ -4,7 +4,7 @@ const CFG = {
   repo: "Whitelist",        // nama repo GitHub tempat whitelist.txt
   branch: "main",
   path: "whitelist.txt",
-  token: "",                // TOKEN GITHUB (fine-grained, izin Contents: Read and write, khusus repo whitelist)
+  token: "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",                // TOKEN GITHUB (fine-grained, izin Contents: Read and write, khusus repo whitelist)
   apiUrl: ""                // opsional: kalau diisi, token tidak dipakai di web (lewat endpoint serverless)
 };
 // ========================
