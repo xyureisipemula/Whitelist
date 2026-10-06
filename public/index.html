@@ -1,23 +1,53 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Whitelist - XYUREI OFFICIAL</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XYUREI WHITELIST</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main class="card">
-  <div class="bar"><span>XYUREI OFFICIAL</span><span class="tag">WHITELIST</span></div>
-  <form id="f">
-    <label>Username Roblox
-      <input id="u" placeholder="contoh: xyurei" autocomplete="off" maxlength="20" required>
-    </label>
-    <button id="b">Daftarkan username</button>
-    <p id="msg" role="status"></p>
-    <small>Setelah terdaftar, buka lagi script di Roblox. Akses terbuka otomatis dalam beberapa detik.</small>
-  </form>
-</main>
-<script src="script.js"></script>
+  <main class="card">
+    <div class="bar">
+      <span>XYUREI OFFICIAL</span>
+      <span class="tag">WHITELIST</span>
+    </div>
+    <form id="f">
+      <label>
+        USERNAME ROBLOX
+        <input id="u" type="text" placeholder="mis. wolfy25726" required minlength="3" maxlength="20">
+      </label>
+      <button id="b" type="submit">DAFTAR SEKARANG</button>
+      <p id="msg"></p>
+      <small>Username 3-20 karakter, huruf/angka/underscore.</small>
+    </form>
+  </main>
+
+  <main class="card">
+    <div class="bar">
+      <span>CEK LIMIT USER</span>
+      <span class="tag">LIMIT</span>
+    </div>
+    <form id="lf">
+      <label>
+        USERNAME ROBLOX
+        <input id="lu" type="text" placeholder="mis. wolfy25726" required minlength="3" maxlength="20">
+      </label>
+      <button type="submit">CEK LIMIT</button>
+      <div id="lpanel" class="panel" style="display:none">
+        <div class="row">
+          <span>LIMIT SEKARANG</span>
+          <b id="lnow">0 / 5</b>
+        </div>
+        <div class="row">
+          <span>RESET OTOMATIS</span>
+          <b id="lreset">00:00:00</b>
+        </div>
+      </div>
+      <p id="lmsg"></p>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
